@@ -1,0 +1,7 @@
+variable_1,variable_2,correlacion_abs
+valor_productos,valor_pagado,0.9961390403085015
+valor_productos,precio_maximo,0.9452306790338147
+precio_maximo,valor_pagado,0.9336291112281883
+peso_total_g,peso_maximo_g,0.8858940024053161
+peso_total_g,volumen_total_cm3,0.8323655015901145
+dia_semana_compra,compra_fin_semana,0.7708208507168582

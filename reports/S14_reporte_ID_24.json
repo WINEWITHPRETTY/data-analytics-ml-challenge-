@@ -1,0 +1,120 @@
+{
+  "laboratorio": "S14",
+  "id_estudiante": "24",
+  "semilla": 1024,
+  "timestamp_utc": "2026-11-18T05:10:09.609828+00:00",
+  "python": "3.12.3",
+  "pandas": "3.0.6",
+  "numpy": "2.5.4",
+  "sklearn": "1.9.1",
+  "scipy": "1.18.1",
+  "n_muestra": 35000,
+  "n_train": 24500,
+  "n_valid": 5250,
+  "n_test": 5250,
+  "fuente_olist_commit": "fa0cc6d1aff713d3c8b9a1e633b56889881848bf",
+  "huella_muestra": "89a094b75572",
+  "umbral_clasificacion": 0.5,
+  "costos_supuestos_brl": {
+    "falso_positivo": 8,
+    "falso_negativo": 35
+  },
+  "pca": {
+    "variables_numericas_iniciales": 24,
+    "umbral_varianza": 0.9,
+    "componentes_retenidas": 15,
+    "varianza_acumulada_retenida": 0.9075678628931069,
+    "varianza_primera_componente": 0.19215096494709266
+  },
+  "experimentos": {
+    "A": {
+      "descripcion": "Referencia: variables numéricas sin PCA",
+      "usa_pca": false,
+      "C": 1.0,
+      "columnas_clasificador": 148,
+      "metricas_validacion": {
+        "accuracy": 0.6668571428571428,
+        "precision": 0.1264737406216506,
+        "recall": 0.6647887323943662,
+        "f1": 0.2125168842863575,
+        "ap": 0.1547079504153873,
+        "roc_auc": 0.7116108705347509
+      },
+      "f1_entrenamiento": 0.22004698512137824,
+      "fp": 1630,
+      "fn": 119,
+      "costo_brl": 17205.0
+    },
+    "B": {
+      "descripcion": "PCA 90 % de varianza",
+      "usa_pca": true,
+      "C": 1.0,
+      "columnas_clasificador": 139,
+      "metricas_validacion": {
+        "accuracy": 0.6455238095238095,
+        "precision": 0.11424180327868852,
+        "recall": 0.6281690140845071,
+        "f1": 0.19332466406588644,
+        "ap": 0.12507316952994166,
+        "roc_auc": 0.6801709131191644
+      },
+      "f1_entrenamiento": 0.20304568527918782,
+      "fp": 1729,
+      "fn": 132,
+      "costo_brl": 18452.0
+    },
+    "C": {
+      "descripcion": "PCA 90 % de varianza, mayor penalización",
+      "usa_pca": true,
+      "C": 0.1,
+      "columnas_clasificador": 139,
+      "metricas_validacion": {
+        "accuracy": 0.6457142857142857,
+        "precision": 0.11548288196218702,
+        "recall": 0.6366197183098592,
+        "f1": 0.19550173010380623,
+        "ap": 0.12721883633302186,
+        "roc_auc": 0.6887902286034902
+      },
+      "f1_entrenamiento": 0.20207055214723926,
+      "fp": 1731,
+      "fn": 129,
+      "costo_brl": 18363.0
+    },
+    "D": {
+      "descripcion": "PCA 90 % de varianza, menor penalización",
+      "usa_pca": true,
+      "C": 10.0,
+      "columnas_clasificador": 139,
+      "metricas_validacion": {
+        "accuracy": 0.6455238095238095,
+        "precision": 0.11463664278403275,
+        "recall": 0.6309859154929578,
+        "f1": 0.19402338674750974,
+        "ap": 0.12491530354714142,
+        "roc_auc": 0.6777948179372455
+      },
+      "f1_entrenamiento": 0.2029262694845558,
+      "fp": 1730,
+      "fn": 131,
+      "costo_brl": 18425.0
+    }
+  },
+  "referencia_siempre_a_tiempo": {
+    "accuracy": 0.9323809523809524,
+    "fn": 355,
+    "costo_brl": 12425.0
+  },
+  "referencia_alertar_todo": {
+    "costo_brl": 39160.0
+  },
+  "modelo_elegido": "A",
+  "ks_valor_flete": {
+    "n_train": 24500,
+    "n_valid": 5250,
+    "estadistico_D": 0.012231292517006775,
+    "valor_p": 0.5330950399240162,
+    "alfa": 0.05,
+    "decision": "No rechazar H0"
+  }
+}

@@ -1,0 +1,2 @@
+n_entrenamiento,n_validacion,estadistico_D,valor_p,alfa,decision
+24500,5250,0.012231292517006775,0.5330950399240162,0.05,No rechazar H0

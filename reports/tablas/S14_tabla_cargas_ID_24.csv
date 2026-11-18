@@ -1,0 +1,14 @@
+variable,CP1,CP2,CP3
+vendedor_mismo_estado,-0.061,-0.159,0.497
+dias_prometidos,0.082,0.181,-0.474
+valor_pagado,0.401,-0.238,-0.071
+valor_productos,0.385,-0.278,-0.069
+proporcion_flete,-0.154,0.383,-0.132
+precio_maximo,0.353,-0.35,-0.105
+peso_total_g,0.353,0.221,0.149
+vendedor_misma_ciudad,-0.044,-0.106,0.343
+valor_flete,0.338,0.293,-0.052
+dia_semana_compra,-0.001,0.058,-0.337
+compra_fin_semana,-0.001,0.058,-0.331
+cantidad_items,0.145,0.328,0.167
+cantidad_productos,0.085,0.295,0.162
